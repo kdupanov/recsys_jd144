@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kdupanov-recsys_jd144"
+version = "0.1.0"
+description = "把候选项映射到类别上，算出推荐系统算法工程师·函数调用的 schema 校验的覆盖率并列出未覆盖的类别"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "kdupanov" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://kdupanov.github.io"
+Repository = "https://github.com/kdupanov/recsys_jd144"
+Issues = "https://github.com/kdupanov/recsys_jd144/issues"
+
+[project.scripts]
+recsys_jd144 = "recsys_jd144:main"
+
+[tool.setuptools]
+py-modules = ["recsys_jd144"]
